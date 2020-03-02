@@ -98,12 +98,6 @@ BLtouch Speed-up
 
 
 
-Filament Runout Sensor
-Change: //#define FILAMENT_RUNOUT_SENSOR
-	To: #define FILAMENT_RUNOUT_SENSOR
-
-
-
 Additional Marlin Firmware changes
 Change: #define BAUDRATE 115200
 Change: #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
