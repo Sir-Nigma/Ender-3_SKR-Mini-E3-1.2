@@ -1,44 +1,44 @@
 # Ender-3_SKR-Mini-E3-1.2
-SKR Mini E3 1.2 configuration for Marrlin 2.X with BLtouch
-Download and install the correct version Git
+SKR Mini E3 1.2 configuration for Marrlin 2.X with BLtouch <br>
+Download and install the correct version Git <br>
 https://git-scm.com/downloads
 
-Download and install VScode
+<b> Download and install VScode </b><br>
 https://code.visualstudio.com/Download
 
-Install the PlatformIO plugin to VScode
+<b> Install the PlatformIO plugin to VScode </b><br>
 https://github.com/bigtreetech/Document/blob/master/How%20to%20install%20VScode+Platformio.md
 
-Download the Marlin Firmware and extract 
+<b> Download the Marlin Firmware and extract  </b><br>
 https://marlinfw.org/
 
-Download the Marlin Firmware Configurations and extract 
+<b> Download the Marlin Firmware Configurations and extract  </b><br>
 https://github.com/MarlinFirmware/Marlin/tree/2.0.x/config
 
-Download the BigTreeTech Firmware and extract 
+<b> Download the BigTreeTech Firmware and extract  </b><br>
 https://github.com/bigtreetech / https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3
 
-Browse to *Unzipped Dir*\Configurations-master\config\examples\Creality\Ender-3
-Copy the 4 files (Configuration.h, Configuration_avd.h, _Bootscreen.h and _Statusscrren.h)
-Pastet the 4 files in *Unzipped Dir*\Marlin-2.0.x\Marlin
+Browse to *Unzipped Dir*\Configurations-master\config\examples\Creality\Ender-3 <br>
+Copy the 4 files (Configuration.h, Configuration_avd.h, _Bootscreen.h and _Statusscrren.h) <br>
+Pastet the 4 files in *Unzipped Dir*\Marlin-2.0.x\Marlin <br>
 
-Open VScode > PlatformIO > Open Project > *Unzipped Dir*\Marlin-2.0.x
+Open VScode > PlatformIO > Open Project > *Unzipped Dir*\Marlin-2.0.x <br>
 Open platformio.ini , Marlin > Configuration.h and Marlin > Configuration_avd.h
 
-Version 02.00.04 #define CONFIGURATION_ADV_H_VERSION 020004
+<b> Version 02.00.04 #define CONFIGURATION_ADV_H_VERSION 020004 </b>
 
-platformio.ini
+<b> platformio.ini </b>
 Change: default_envs = megaatmega2560
 To: default_envs = STM32F103RC_btt
 
-Configuration_avd.h
-Disable: //#define BLTOUCH_DELAY 200
-#define BLTOUCH_SET_5V_MODE
-Disable: //#define BLTOUCH_HS_MODE
-*Save Space on Rom*
-Disable: #define DOUBLECLICK_FOR_Z_BABYSTEPPING
+<b> Configuration_avd.h </b><br>
+Disable: //#define BLTOUCH_DELAY 200 <br>
+#define BLTOUCH_SET_5V_MODE <br>
+Disable: //#define BLTOUCH_HS_MODE <br>
+<b> *Save Space on Rom* </b><br>
+Disable: #define DOUBLECLICK_FOR_Z_BABYSTEPPING <br>
 
-Configuration.h
+<b> Configuration.h </b><br>
 Disable: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)"
 
 Change: #define SERIAL_PORT 2
@@ -49,14 +49,14 @@ Change: #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2
 
 Disable: #define CUSTOM_MACHINE_NAME "SKR-mini-E3-V1.2, TFT35-V3.0"
 
-Change: #define X_DRIVER_TYPE  A4988
-	To: #define X_DRIVER_TYPE  TMC2209
-Change: #define Y_DRIVER_TYPE  A4988
-	To: #define Y_DRIVER_TYPE  TMC2209
-Change: #define Z_DRIVER_TYPE  A4988
-	To: #define Z_DRIVER_TYPE  TMC2209
-Change: #define E0_DRIVER_TYPE  A4988
-	To: #define E0_DRIVER_TYPE TMC2209
+Change: #define X_DRIVER_TYPE  A4988 <br>
+	To: #define X_DRIVER_TYPE  TMC2209 <br>
+Change: #define Y_DRIVER_TYPE  A4988 <br>
+	To: #define Y_DRIVER_TYPE  TMC2209 <br>
+Change: #define Z_DRIVER_TYPE  A4988 <br>
+	To: #define Z_DRIVER_TYPE  TMC2209 <br>
+Change: #define E0_DRIVER_TYPE  A4988 <br>
+	To: #define E0_DRIVER_TYPE TMC2209 <br>
 
 Enable: #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
@@ -66,8 +66,9 @@ Disable: //#define SD_CHECK_AND_RETRY
 
 Enable: #define INDIVIDUAL_AXIS_HOMING_MENU
 
-Disable: //#define SPEAKER
-BLtouch
+Disable: //#define SPEAKER <br>
+
+<b> BLtouch </b><br>
 Enable: #define BLTOUCH
 
 Enable: #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
@@ -88,43 +89,43 @@ Disable: //#define MIN_SOFTWARE_ENDSTOP_Z
 
 Enable: #define Z_SAFE_HOMING
 
-BLtouch Speed-up
-#define GRID_MAX_POINTS_X 3
-#define Z_CLEARANCE_DEPLOY_PROBE   5 //WAS 10
-#define Z_CLEARANCE_BETWEEN_PROBES  4 //WAS 5
-#define HOMING_FEEDRATE_XY (30*60) //WAS 20 
-#define HOMING_FEEDRATE_Z  (6*60) //WAS 4
-#define SERVO_DELAY { 200 }  //WAS 300
+<b> BLtouch Speed-up </b><br>
+#define GRID_MAX_POINTS_X 3 <br>
+#define Z_CLEARANCE_DEPLOY_PROBE   5 //WAS 10 <br>
+#define Z_CLEARANCE_BETWEEN_PROBES  4 //WAS 5 <br>
+#define HOMING_FEEDRATE_XY (30*60) //WAS 20  <br>
+#define HOMING_FEEDRATE_Z  (6*60) //WAS 4 <br>
+#define SERVO_DELAY { 200 }  //WAS 300 <br>
 
 
 
-Additional Marlin Firmware changes
-Change: #define BAUDRATE 115200
-Change: #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
-Change: #define TEMP_SENSOR_BED 1
-Change: #define BED_MAXTEMP      125
-Change: #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
-Change: #define DEFAULT_MAX_FEEDRATE          { 500, 500, 5, 25 }
-Change: #define MAX_FEEDRATE_EDIT_VALUES    { 600, 600, 10, 50 } 
-Change: #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
-Change: #define DEFAULT_ACCELERATION          500 
-    #define DEFAULT_RETRACT_ACCELERATION  500
-    #define DEFAULT_TRAVEL_ACCELERATION   500
-Change: #define JUNCTION_DEVIATION_MM 0.08
-Enable: #define S_CURVE_ACCELERATION
-Disable //#define DISABLE_INACTIVE_EXTRUDER
-Change: #define INVERT_X_DIR true
-Change: #define INVERT_E0_DIR true
-Change: #define X_BED_SIZE 235
-    #define Y_BED_SIZE 235
-Change: #define Z_MAX_POS 250
-Change: #define LCD_BED_LEVELING
-Change: #define HOMING_FEEDRATE_XY (50*60)
-Enable: #define EEPROM_SETTINGS
-Enable: #define EEPROM_AUTO_INIT
-Change: #define PREHEAT_1_FAN_SPEED   255
-	    #define PREHEAT_2_FAN_SPEED   255
-Change: #define DISPLAY_CHARSET_HD44780 WESTERN
-Enable: #define SDSUPPORT
-Enable: #define INDIVIDUAL_AXIS_HOMING_MENU
-Enable: #define CR10_STOCKDISPLAY
+<b> Additional Marlin Firmware changes </b><br>
+Change: #define BAUDRATE 115200 <br>
+Change: #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75 <br>
+Change: #define TEMP_SENSOR_BED 1 <br>
+Change: #define BED_MAXTEMP      125 <br>
+Change: #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 } <br>
+Change: #define DEFAULT_MAX_FEEDRATE          { 500, 500, 5, 25 } <br>
+Change: #define MAX_FEEDRATE_EDIT_VALUES    { 600, 600, 10, 50 }  <br>
+Change: #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 } <br>
+Change: #define DEFAULT_ACCELERATION          500  <br>
+    #define DEFAULT_RETRACT_ACCELERATION  500 <br>
+    #define DEFAULT_TRAVEL_ACCELERATION   500 <br>
+Change: #define JUNCTION_DEVIATION_MM 0.08 <br>
+Enable: #define S_CURVE_ACCELERATION <br>
+Disable //#define DISABLE_INACTIVE_EXTRUDER <br>
+Change: #define INVERT_X_DIR true <br>
+Change: #define INVERT_E0_DIR true <br>
+Change: #define X_BED_SIZE 235 <br>
+    #define Y_BED_SIZE 235 <br>
+Change: #define Z_MAX_POS 250 <br>
+Change: #define LCD_BED_LEVELING <br>
+Change: #define HOMING_FEEDRATE_XY (50*60) <br>
+Enable: #define EEPROM_SETTINGS <br>
+Enable: #define EEPROM_AUTO_INIT <br>
+Change: #define PREHEAT_1_FAN_SPEED   255 <br>
+	    #define PREHEAT_2_FAN_SPEED   255 <br>
+Change: #define DISPLAY_CHARSET_HD44780 WESTERN <br>
+Enable: #define SDSUPPORT <br>
+Enable: #define INDIVIDUAL_AXIS_HOMING_MENU <br>
+Enable: #define CR10_STOCKDISPLAY <br>
