@@ -27,7 +27,7 @@ Open platformio.ini , Marlin > Configuration.h and Marlin > Configuration_avd.h
 
 <b> Version 02.00.04 #define CONFIGURATION_ADV_H_VERSION 020004 </b>
 
-<b> platformio.ini </b>
+<b> platformio.ini </b><br>
 Change: default_envs = megaatmega2560
 To: default_envs = STM32F103RC_btt
 
