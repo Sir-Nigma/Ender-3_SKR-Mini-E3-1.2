@@ -40,46 +40,29 @@ Disable: #define DOUBLECLICK_FOR_Z_BABYSTEPPING <br>
 
 <b> Configuration.h </b><br>
 Change: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)"
-
 Change: #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2
-
 Change: #define CUSTOM_MACHINE_NAME "SKR-mini-E3-V1.2, TFT35-V3.0"
-
 Enable: #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
-
 Enable: #define EEPROM_AUTO_INIT
 
 
 <b> BLtouch </b><br>
 Enable: #define BLTOUCH
-
 Enable: #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
-
 Change: #define NOZZLE_TO_PROBE_OFFSET { -40, -10, -1.85 }
-
 Change: #define XY_PROBE_SPEED 10000
-
 Disable: //#define MESH_BED_LEVELING
-
 Enable: #define AUTO_BED_LEVELING_BILINEAR
-
+Change: #define GRID_MAX_POINTS_X 3 <br>
 Disable: //#define MIN_SOFTWARE_ENDSTOP_Z
-
 Enable: #define Z_SAFE_HOMING
 
 <b> BLtouch Speed-up </b><br>
-#define GRID_MAX_POINTS_X 3 <br>
-
 #define Z_CLEARANCE_DEPLOY_PROBE   5 //WAS 10 <br>
-
 #define Z_CLEARANCE_BETWEEN_PROBES  4 //WAS 5 <br>
-
 #define HOMING_FEEDRATE_XY (30*60) //WAS 20  <br>
-
 #define HOMING_FEEDRATE_Z  (6*60) //WAS 4 <br>
-
 #define SERVO_DELAY { 200 }  //WAS 300 <br>
-
 
 
 <b> Additional Marlin Firmware changes </b><br>
