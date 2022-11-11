@@ -13,6 +13,7 @@ https://github.com/bigtreetech/Document/blob/master/How%20to%20install%20VScode+
 https://marlinfw.org/
 
 <b> Download the Marlin Firmware Configurations and extract  </b><br>
+https://github.com/MarlinFirmware/Marlin/tree/2.1.x/config
 https://github.com/MarlinFirmware/Marlin/tree/2.1.1/config
 
 <b> Download the BigTreeTech Firmware and extract  </b><br>
