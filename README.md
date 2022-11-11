@@ -36,7 +36,7 @@ To: default_envs = STM32F103RC_btt <br>
 <b> Configuration_avd.h </b><br>
 Enable: #define BLTOUCH_DELAY 500 <br>
 Disable: //#define BLTOUCH_SET_5V_MODE <br>
-Enable: #define BLTOUCH_HS_MODE <br>
+Enable: #define BLTOUCH_FORCE_SW_MODE <br>
 
 <b> Configuration.h </b><br>
 Change: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)" <br>
