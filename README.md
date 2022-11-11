@@ -1,4 +1,4 @@
-# Ender-3_SKR-Mini-E3-1.2
+# Marlin 2.1.1 - Ender-3_SKR-Mini-E3-1.2
 SKR Mini E3 1.2 configuration for Marrlin 2.X with BLtouch <br>
 Download and install the correct version Git <br>
 https://git-scm.com/downloads
@@ -13,7 +13,7 @@ https://github.com/bigtreetech/Document/blob/master/How%20to%20install%20VScode+
 https://marlinfw.org/
 
 <b> Download the Marlin Firmware Configurations and extract  </b><br>
-https://github.com/MarlinFirmware/Marlin/tree/2.0.x/config
+https://github.com/MarlinFirmware/Marlin/tree/2.1.1/config
 
 <b> Download the BigTreeTech Firmware and extract  </b><br>
 https://github.com/bigtreetech / https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3
