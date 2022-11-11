@@ -33,16 +33,22 @@ Open platformio.ini , Marlin > Configuration.h and Marlin > Configuration_avd.h
 Change: default_envs = megaatmega2560 <br>
 To: default_envs = STM32F103RC_btt <br>
 
+<b> Change Filament Runout PIN </b><br>
+<b> Marlin / src / pins / stm32f1 / pins_BTT_SKR_MINI_E3_common </b><br>
+Change: #define FIL_RUNOUT_PIN   P12 //WAS P15 (See image (Filament_Runout_3PIN)
+
 <b> Configuration_avd.h </b><br>
 Enable: #define BLTOUCH_DELAY 500 <br>
 Disable: //#define BLTOUCH_SET_5V_MODE <br>
 Enable: #define BLTOUCH_FORCE_SW_MODE <br>
+Enable: #define PROBE_OFFSET_WIZARD
 
 <b> Configuration.h </b><br>
 Change: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)" <br>
 Change: #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2 <br>
 Change: #define CUSTOM_MACHINE_NAME "SKR-mini-E3-V1.2, TFT35-V3.0" <br>
 Enable: #define EEPROM_AUTO_INIT <br>
+Enable: #define FILAMENT_RUNOUT_SENSOR
 
 
 <b> BLtouch </b><br>
