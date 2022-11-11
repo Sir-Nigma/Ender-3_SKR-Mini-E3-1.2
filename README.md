@@ -44,9 +44,9 @@ Enable: #define BLTOUCH_FORCE_SW_MODE <br>
 Enable: #define PROBE_OFFSET_WIZARD
 
 <b> Configuration.h </b><br>
-Change: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)" <br>
+Change: #define STRING_CONFIG_H_AUTHOR "(M2.1.1, SKR-mini-E3-V1.2)" <br>
 Change: #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2 <br>
-Change: #define CUSTOM_MACHINE_NAME "SKR-mini-E3-V1.2, TFT35-V3.0" <br>
+Change: #define CUSTOM_MACHINE_NAME "E3-SKR-V1.2 (M2.1.1), TFT35-V3.0"
 Enable: #define EEPROM_AUTO_INIT <br>
 Enable: #define FILAMENT_RUNOUT_SENSOR
 
