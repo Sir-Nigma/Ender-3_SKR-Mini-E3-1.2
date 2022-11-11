@@ -47,7 +47,6 @@ Enable: #define EEPROM_AUTO_INIT <br>
 Enable: #define BLTOUCH <br>
 Enable: #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN <br>
 Change: #define NOZZLE_TO_PROBE_OFFSET { -40, -10, -1.85 } <br>
-Change: #define XY_PROBE_SPEED 10000 <br>
 Disable: //#define MESH_BED_LEVELING <br>
 Enable: #define AUTO_BED_LEVELING_BILINEAR <br>
 Change: #define GRID_MAX_POINTS_X 3 <br>
