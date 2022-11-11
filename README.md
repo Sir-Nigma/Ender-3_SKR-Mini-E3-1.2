@@ -35,8 +35,6 @@ No Changes > Use "Auto Marlin Builder" extension in Visual Studio Code <br>
 Disable: //#define BLTOUCH_DELAY 200 <br>
 #define BLTOUCH_SET_5V_MODE <br>
 Disable: //#define BLTOUCH_HS_MODE <br>
-<b> *Save Space on Rom* </b><br>
-Disable: #define DOUBLECLICK_FOR_Z_BABYSTEPPING <br>
 
 <b> Configuration.h </b><br>
 Change: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)" <br>
