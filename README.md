@@ -40,7 +40,6 @@ Disable: //#define BLTOUCH_HS_MODE <br>
 Change: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)" <br>
 Change: #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2 <br>
 Change: #define CUSTOM_MACHINE_NAME "SKR-mini-E3-V1.2, TFT35-V3.0" <br>
-Enable: #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN <br>
 Enable: #define EEPROM_AUTO_INIT <br>
 
 
