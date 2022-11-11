@@ -35,7 +35,7 @@ To: default_envs = STM32F103RC_btt <br>
 
 <b> Change Filament Runout PIN </b><br>
 <b> Marlin / src / pins / stm32f1 / pins_BTT_SKR_MINI_E3_common </b><br>
-Change: #define FIL_RUNOUT_PIN   P12 //WAS P15 (See image (Filament_Runout_3PIN)
+Change: #define FIL_RUNOUT_PIN   P12 //WAS P15 (See image Filament_Runout_3PIN)
 
 <b> Configuration_avd.h </b><br>
 Enable: #define BLTOUCH_DELAY 500 <br>
