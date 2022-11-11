@@ -26,7 +26,7 @@ Pastet the 4 files in *Unzipped Dir*\Marlin-2.1.x\Marlin <br>
 Open VScode > PlatformIO > Open Project > *Unzipped Dir*\Marlin-2.1.x <br>
 Open platformio.ini , Marlin > Configuration.h and Marlin > Configuration_avd.h
 
-<b> Version 02.00.04 #define CONFIGURATION_ADV_H_VERSION 020004 </b>
+<b> ---------------------------------------------------------------------------------------- </b>
 
 <b> platformio.ini </b><br>
 <b> No Changes > Use "Auto Marlin Builder" extension in Visual Studio Code </b><br>
