@@ -29,12 +29,14 @@ Open platformio.ini , Marlin > Configuration.h and Marlin > Configuration_avd.h
 <b> Version 02.00.04 #define CONFIGURATION_ADV_H_VERSION 020004 </b>
 
 <b> platformio.ini </b><br>
-No Changes > Use "Auto Marlin Builder" extension in Visual Studio Code <br>
+<b> No Changes > Use "Auto Marlin Builder" extension in Visual Studio Code </b><br>
+Change: default_envs = megaatmega2560 <br>
+To: default_envs = STM32F103RC_btt <br>
 
 <b> Configuration_avd.h </b><br>
-Disable: //#define BLTOUCH_DELAY 200 <br>
-#define BLTOUCH_SET_5V_MODE <br>
-Disable: //#define BLTOUCH_HS_MODE <br>
+Enable: #define BLTOUCH_DELAY 500 <br>
+Disable: //#define BLTOUCH_SET_5V_MODE <br>
+Enable: #define BLTOUCH_HS_MODE <br>
 
 <b> Configuration.h </b><br>
 Change: #define STRING_CONFIG_H_AUTHOR "(BIGTREETECH, SKR-mini-E3-V1.2)" <br>
