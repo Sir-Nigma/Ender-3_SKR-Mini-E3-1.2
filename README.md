@@ -1,5 +1,5 @@
 # Marlin 2.1.1 - Ender-3_SKR-Mini-E3-1.2
-SKR Mini E3 1.2 configuration for Marrlin 2.X with BLtouch <br>
+<b> SKR Mini E3 1.2 configuration for Marrlin 2.1.1 with BLtouch and Filament Runout </b><br>
 Download and install the correct version Git <br>
 https://git-scm.com/downloads
 
