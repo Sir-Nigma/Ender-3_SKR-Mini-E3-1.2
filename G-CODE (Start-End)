@@ -1,0 +1,27 @@
+
+
+; Ender 3 Pro with BLTouch - Start G-code
+G92 E0                      ; Reset Extruder
+G28                         ; Home all axes
+G29                         ; Bed Leveling (BLTouch)
+
+G1 Z2.0 F3000               ; Move Z Axis up a bit to prevent scratching
+G1 X0.1 Y20 Z0.3 F5000.0    ; Move to start position
+G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ; Prime line 1
+G1 X0.4 Y200.0 Z0.3 F5000.0     ; Move slightly right
+G1 X0.4 Y20 Z0.3 F1500.0 E30    ; Prime line 2
+G92 E0                      ; Reset Extruder again
+G1 Z2.0 F3000               ; Lift to avoid blob
+G1 X5 Y20 Z0.3 F5000.0      ; Move over to prevent blob squish
+
+
+; Ender 3 Pro with BLTouch - End G-code
+G91 ; Switch to relative positioning
+G1 E-1 F300 ; Retract 1mm of filament to prevent oozing
+G1 Z+5 E-5 X0 Y0 F9000 ; Move the nozzle up and out of the print area
+G28 X0 Y0 ; Home the X and Y axes to the front
+
+M104 S0 ; Turn off the hotend heater
+M140 S0 ; Turn off the heated bed
+M107 ; Turn off the fan
+M84 ; Disable motors to reduce power consumption and noise
